@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llcontrol"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <ToggleButton
+                android:id="@+id/buttonToggle"
+                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:text="F"
+                android:textOff="M"
+                android:textOn="F"
+                />
+            <ToggleButton
+                android:id="@+id/buttonToggle10"
+                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:textOff="10"
+                android:textOn="H"
+                android:text="10" />
+            <Button
+                android:id="@+id/buttonMinus"
+                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:text="-" />
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:text="+" />
+            <TextView
+                android:id="@+id/tvScale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+                <requestFocus />
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <EditText android:text="WebView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edittext"
+                android:maxLines="1"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/buttonX"
+                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:text="x" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Ok" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llcontrol"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/parentScroll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/llcontrol"-->
+
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+
+        <!--&gt;-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp" >-->
+
+            <!--<WebView-->
+                <!--android:id="@+id/webview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="300dp"-->
+                <!--tools:ignore="WebViewLayout"-->
+                <!--/>-->
+        <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
+
+    <!--<WebView-->
+        <!--android:id="@+id/webview"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_below="@+id/llcontrol"-->
+
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--&gt;-->
+
+    <!--</WebView>-->
+
+</RelativeLayout>

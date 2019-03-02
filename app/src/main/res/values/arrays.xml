@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="places_array">
+        <item></item>
+        <item>LAST</item>
+        <item>Moscow</item>
+        <item>Saint-Petersburg</item>
+        <item>Alushta</item>
+        <item>Stolbovaya</item>
+        <item>Kurovskoe</item>
+    </string-array>
+</resources>
